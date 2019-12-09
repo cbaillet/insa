@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="9" assertions="11" errors="0" failures="0" skipped="0" time="0.004703">
+    <testsuite name="Poney" tests="8" assertions="10" errors="0" failures="0" skipped="0" time="0.004686">
+      <testsuite name="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" tests="7" assertions="9" errors="0" failures="0" skipped="0" time="0.004661">
+        <testsuite name="PoneysTest::testRemovePoneyFromField" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.001207">
+          <testcase name="testRemovePoneyFromField with data set #0" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="28" assertions="1" time="0.001150"/>
+          <testcase name="testRemovePoneyFromField with data set #1" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="28" assertions="1" time="0.000036"/>
+          <testcase name="testRemovePoneyFromField with data set #2" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="28" assertions="1" time="0.000021"/>
+        </testsuite>
+        <testcase name="testAddPoneyFromField" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="47" assertions="1" time="0.000021"/>
+        <testcase name="testRemoveMorePoneyFromField" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="59" assertions="1" time="0.000209"/>
+        <testcase name="testMockGetNames" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="68" assertions="2" time="0.003128"/>
+        <testcase name="testFreePoney" class="PoneysTest" classname="PoneysTest" file="/home/etudiant2/insa/poneys/tests/PoneysTest.php" line="81" assertions="2" time="0.000096"/>
+      </testsuite>
+      <testsuite name="monTest" file="/home/etudiant2/insa/poneys/tests/monTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000025">
+        <testcase name="testR" class="monTest" classname="monTest" file="/home/etudiant2/insa/poneys/tests/monTest.php" line="11" assertions="1" time="0.000025"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Montest" file="/home/etudiant2/insa/poneys/tests/monTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.000017">
+      <testcase name="testR" class="monTest" classname="monTest" file="/home/etudiant2/insa/poneys/tests/monTest.php" line="11" assertions="1" time="0.000017"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

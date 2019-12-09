@@ -1,0 +1,25 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="phpunit.xsd">
+
+    <php>
+        <const name="TCHAMP" value="20"/>
+        <const name="QPONEY" value="10"/>
+    </php>
+    
+    <testsuites>
+        <testsuite name="Poney">
+            <directory>tests/</directory>
+            <file>tests/PoneyTest.php</file>
+        </testsuite>
+
+        <testsuite name="Montest">
+            <directory>tests/</directory>
+            <file>tests/monTest.php</file>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type="junit" target="logfile.xml" logIncompleteSkipped="false"/>
+    </logging>
+
+</phpunit>

@@ -15,6 +15,16 @@ class Poneys
     {
         return $this->count;
     }
+    
+    /**
+     * Set le nombre de poneys
+     *
+     * @return void
+     */
+    public function setCount($i): void
+    {
+        $this->count = $i;
+    }
 
     /**
      * Retire un poney du champ
@@ -25,7 +35,25 @@ class Poneys
      */
     public function removePoneyFromField(int $number): void
     {
-        $this->count -= $number;
+        if ($this->count < $number){
+            throw new Exception("Il ne peut pas y avoir moins de poney qu'ils en existent.") ;
+        }
+        else{
+            $this->count -= $number;
+        }
+        
+    }
+
+    /**
+     * ajoute un poney du champ
+     *
+     * @param int $number Nombre de poneys à ajouter
+     *
+     * @return void
+     */
+    public function addPoneyFromField(int $number): void
+    {
+        $this->count += $number;
     }
 
     /**
@@ -36,6 +64,23 @@ class Poneys
     public function getNames(): array
     {
 
+    }
+
+    /**
+     * Savoir si il reste de la place pour les poneys
+     *
+     * @return bool
+     */
+    public function isFree(): bool
+    {
+        if ($this->count >= TCHAMP)
+        {
+            return(False);
+        }
+        else
+        {
+            return(True);
+        }
     }
 }
 ?>
